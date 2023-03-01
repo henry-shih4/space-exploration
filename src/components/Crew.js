@@ -51,27 +51,73 @@ export default function Crew() {
 
   return (
     <div className="min-h-[100%] h-[100%] flex justify-center items-center bg-no-repeat bg-cover bg-crew-mobile md:bg-crew-tablet lg:bg-crew-desktop lg:h-[100vh]">
-      <div className="flex flex-col justify-center items-center gap-y-10 pb-6 w-[80%] lg:flex-row lg:h-[80%] lg:items-end">
-        <div className="flex flex-col justify-center items-center w-[80%]">
-          <div className="h-[140px] lg:hidden"></div>
-          <div className="flex flex-col gap-y-6 w-[100%] lg:w-[60%]">
-            <div className="flex justify-center items-center w-[100%] gap-x-5 mb-8 lg:justify-start">
-              <div className="text-gray-color heading-2 font-bold leading-[34px]">
-                02
+      <div className="flex flex-col justify-center items-center gap-y-10  w-[80%] lg:h-[100%]  lg:justify-end ">
+        <div className="h-[120px] lg:hidden"></div>
+        <div className="flex flex-col justify-center items-center w-[100%]  lg:h-[100%] ">
+          <div className="flex flex-col  justify-center items-center gap-y-6 w-[100%] lg:flex-row lg:h-full lg:items-end ">
+            <div className="flex flex-col justify-center items-center gap-y-6 lg:w-[50%]  lg:gap-y-0  lg:h-[75%] lg:justify-start">
+              <div className="h-full  flex flex-col justify-evenly items-center">
+                <div className="flex justify-start items-center  w-[100%] gap-x-5 mb-8  ">
+                  <div className="text-gray-color heading-2 font-bold leading-[34px]">
+                    02
+                  </div>
+                  <div className="text-third-color text-[20px] leading-[24px] tracking-[3.375px] font-sub-font lg:heading-2 lg:text-[28px] lg:leading-[34px]">
+                    MEET YOUR CREW
+                  </div>
+                </div>
+                <div className="flex flex-col justify-center items-center w-[80%] gap-y-4 lg:justify-start lg:w-[100%] mt-auto">
+                  <div className="font-main-font text-[24px] leading-[28px] uppercase text-[#8E8F93] text-center  w-full lg:text-left lg:text-[32px] lg:leading-[37px] ">
+                    {memberInfo ? memberInfo.role : null}
+                  </div>
+                  <div className="font-main-font text-[40px] leading-[46px] uppercase text-third-color flex justify-center items-center text-center w-full lg:justify-start lg:text-[56px] lg:leading-[64px] lg:text-left">
+                    {memberInfo ? memberInfo.name : null}
+                  </div>
+                  <div className="font-sub-font-2 text-[16px] leading-[28px] text-secondary-color text-center w-full lg:text-left lg:text-[18px] lg:leading-[32px] ">
+                    <div className="lg:w-[80%]">
+                      {memberInfo ? memberInfo.bio : null}
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-center items-center py-4 gap-x-6 lg:justify-start w-full mt-auto mb-auto">
+                  <button
+                    className={
+                      memberId === 1
+                        ? "h-[15px] w-[15px] bg-third-color rounded-full cursor-pointer"
+                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer"
+                    }
+                    onClick={() => setMemberId(1)}
+                  ></button>
+                  <button
+                    className={
+                      memberId === 2
+                        ? "h-[15px] w-[15px] bg-third-color rounded-full cursor-pointer"
+                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer"
+                    }
+                    onClick={() => setMemberId(2)}
+                  ></button>
+                  <button
+                    className={
+                      memberId === 3
+                        ? "h-[15px] w-[15px] bg-third-color rounded-full cursor-pointer"
+                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer"
+                    }
+                    onClick={() => setMemberId(3)}
+                  ></button>
+                  <button
+                    className={
+                      memberId === 4
+                        ? "h-[15px] w-[15px] bg-third-color rounded-full cursor-pointer"
+                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer"
+                    }
+                    onClick={() => setMemberId(4)}
+                  ></button>
+                </div>
               </div>
-              <div className="text-third-color text-[20px] leading-[24px] tracking-[3.375px] font-sub-font lg:heading-2">
-                MEET YOUR CREW
-              </div>
-            </div>
-            <div className="flex flex-col justify-center items-center ">
-              <div>{memberInfo ? memberInfo.role : null}</div>
-              <div>{memberInfo ? memberInfo.name : null}</div>
-              <div>{memberInfo ? memberInfo.bio : null}</div>
             </div>
 
-            <div className="lg:w-[40%] flex flex-col justify-center items-center ">
+            <div className="min-w-[50%] flex flex-col justify-end items-center pt-4">
               <div>
-                <img src={memberInfo ? memberInfo.image : null} />
+                <img className="" src={memberInfo ? memberInfo.image : null} />
               </div>
             </div>
           </div>

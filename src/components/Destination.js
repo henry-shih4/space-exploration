@@ -59,9 +59,9 @@ export default function Destination() {
     <>
       <div className="min-h-[100%] h-[100%] flex justify-center items-center bg-destination-mobile bg-cover bg-no-repeat md:bg-destination-tablet lg:bg-destination-desktop lg:h-[100vh]">
         <div className="flex flex-col justify-center items-center gap-y-10 pb-6 w-[80%] lg:flex-row lg:h-[80%] lg:items-end">
-          <div className="h-[140px] lg:hidden"></div>
+          <div className="h-[120px] lg:hidden"></div>
           <div className="flex flex-col gap-y-6 w-[100%] lg:w-[60%]">
-            <div className="flex justify-center items-center w-[100%] gap-x-5 mb-8 lg:justify-start">
+            <div className="flex justify-center items-center w-[100%] gap-x-5 mb-8 md:justify-start">
               <div className="text-gray-color heading-2 font-bold leading-[34px]">
                 01
               </div>
