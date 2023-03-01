@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #0b0d17;
+  --secondary-color: #d0d6f9;
+  --third-color: #ffffff;
+  --gray-color: #383b4b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .heading-2 {
+    @apply text-[28px] tracking-[4.725px] font-sub-font;
+  }
+
+  .heading-3 {
+    @apply tracking-[2.7px] text-[16px] font-sub-font leading-[19px];
+  }
+
+  .body-text {
+    @apply font-sub-font-2 text-[18px] leading-[32px] text-secondary-color;
+  }
+}
+
+html,
+body {
+  height: 100%;
 }
