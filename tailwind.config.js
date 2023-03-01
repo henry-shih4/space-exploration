@@ -16,10 +16,14 @@ module.exports = {
           "url('/public/images/destination/background-destination-mobile.jpg')",
         "crew-desktop":
           "url('/public/images/crew/background-crew-desktop.jpg')",
-        "crew-tablet":
-          "url('/public/images/crew/background-crew-tablet.jpg')",
-        "crew-mobile":
-          "url('/public/images/crew/background-crew-mobile.jpg')",
+        "crew-tablet": "url('/public/images/crew/background-crew-tablet.jpg')",
+        "crew-mobile": "url('/public/images/crew/background-crew-mobile.jpg')",
+        "technology-desktop":
+          "url('/public/images/technology/background-technology-desktop.jpg')",
+        "technology-tablet":
+          "url('/public/images/technology/background-technology-tablet.jpg')",
+        "technology-mobile":
+          "url('/public/images/technology/background-technology-mobile.jpg')",
       },
       colors: {
         "primary-color": "var(--primary-color)",

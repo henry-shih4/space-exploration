@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   return (
     <>
-      <div className="flex h-[100dvh] justify-center items-end">
+      <div className="flex h-[100dvh] min-h-[100dvh] justify-center items-end">
         <div className="bg-home-desktop z-[-10] h-[100%] w-[100%] bg-cover bg-center bg-no-repeat absolute "></div>
         <div className="bg-home-tablet z-[-10] h-[100%] w-[100%] bg-cover bg-center bg-no-repeat absolute lg:hidden"></div>
         <div className="absolute bg-home-mobile z-[-10] h-[100%] w-[100%] bg-no-repeat bg-cover md:hidden "></div>
