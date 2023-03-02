@@ -91,8 +91,8 @@ export default function Technology() {
                 <div
                   className={
                     technologyId === 1
-                      ? "h-[60px] w-[60px] bg-white rounded-full text-black flex justify-center items-center  cursor-pointer"
-                      : "h-[60px] w-[60px] bg-transparent rounded-full text-white border-2 border-gray-color flex justify-center items-center  cursor-pointer"
+                      ? "h-[60px] w-[60px] bg-white rounded-full text-black flex justify-center items-center  cursor-pointer duration-300"
+                      : "h-[60px] w-[60px] bg-transparent rounded-full text-white border-2 border-gray-color flex justify-center items-center  cursor-pointer hover:border-white duration-150"
                   }
                   onClick={() => {
                     setTechnoloyId(1);
@@ -103,8 +103,8 @@ export default function Technology() {
                 <div
                   className={
                     technologyId === 2
-                      ? "h-[60px] w-[60px] bg-white rounded-full text-black flex justify-center items-center  cursor-pointer"
-                      : "h-[60px] w-[60px] bg-transparent rounded-full text-white border-2 border-gray-color flex justify-center items-center  cursor-pointer"
+                      ? "h-[60px] w-[60px] bg-white rounded-full text-black flex justify-center items-center  cursor-pointer duration-300"
+                      : "h-[60px] w-[60px] bg-transparent rounded-full text-white border-2 border-gray-color flex justify-center items-center  cursor-pointer hover:border-white duration-150"
                   }
                   onClick={() => {
                     setTechnoloyId(2);
@@ -115,8 +115,8 @@ export default function Technology() {
                 <div
                   className={
                     technologyId === 3
-                      ? "h-[60px] w-[60px] bg-white rounded-full text-black flex justify-center items-center  cursor-pointer"
-                      : "h-[60px] w-[60px] bg-transparent rounded-full text-white border-2 border-gray-color flex justify-center items-center  cursor-pointer"
+                      ? "h-[60px] w-[60px] bg-white rounded-full text-black flex justify-center items-center  cursor-pointer duration-300"
+                      : "h-[60px] w-[60px] bg-transparent rounded-full text-white border-2 border-gray-color flex justify-center items-center  cursor-pointer hover:border-white duration-150"
                   }
                   onClick={() => {
                     setTechnoloyId(3);

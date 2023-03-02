@@ -34,7 +34,7 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive
                     ? "flex gap-x-2 justify-center items-center h-full border-b-2"
-                    : "flex gap-x-2 border-b-2 border-transparent"
+                    : "flex gap-x-2 justify-center items-center h-full  border-b-2 border-transparent hover:border-b-2 hover:border-[#8a8b90] duration-300"
                 }
                 to="/destination"
               >
@@ -47,7 +47,7 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive
                     ? "flex gap-x-2 justify-center items-center h-full border-b-2"
-                    : "flex gap-x-2 border-b-2 border-transparent"
+                    : "flex gap-x-2 justify-center items-center h-full  border-b-2 border-transparent hover:border-b-2 hover:border-[#8a8b90] duration-300"
                 }
                 to="/crew"
               >
@@ -60,7 +60,7 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive
                     ? "flex gap-x-2 justify-center items-center h-full border-b-2"
-                    : "flex gap-x-2 border-b-2 border-transparent"
+                    : "flex gap-x-2 justify-center items-center h-full  border-b-2 border-transparent hover:border-b-2 hover:border-[#8a8b90] duration-300"
                 }
                 to="/technology"
               >
@@ -111,6 +111,9 @@ export default function Header() {
                   : "flex gap-x-2 border-b-2 border-transparent"
               }
               to="/"
+              onClick={() => {
+                setShowSideNav(false);
+              }}
             >
               <div className="font-bold">00</div>
               <div>HOME</div>
@@ -124,6 +127,9 @@ export default function Header() {
                   : "flex gap-x-2 border-b-2 border-transparent"
               }
               to="/destination"
+              onClick={() => {
+                setShowSideNav(false);
+              }}
             >
               <div className="font-bold">01</div>
               <div>DESTINATION</div>
@@ -137,6 +143,9 @@ export default function Header() {
                   : "flex gap-x-2 border-b-2 border-transparent"
               }
               to="/crew"
+              onClick={() => {
+                setShowSideNav(false);
+              }}
             >
               <div className="font-bold">02</div>
               <div>CREW</div>
@@ -150,6 +159,9 @@ export default function Header() {
                   : "flex gap-x-2 border-b-2 border-transparent"
               }
               to="/technology"
+              onClick={() => {
+                setShowSideNav(false);
+              }}
             >
               <div className="font-bold">03</div>
               <div>TECHNOLOGY</div>

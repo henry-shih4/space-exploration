@@ -77,9 +77,9 @@ export default function Destination() {
               />
             </div>
           </div>
-          <div className="lg:w-[40%] flex flex-col justify-center items-center  gap-y-10 ">
+          <div className="lg:w-[40%] h-[75%] flex flex-col justify-evenly items-center  gap-y-10 ">
             <div className=" h-[2rem] flex justify-center items-center w-full text-white gap-x-8 lg:justify-start ">
-              <div className="h-full flex flex-col justify-between">
+              <div className="h-full flex flex-col justify-between group">
                 <button
                   className="heading-3"
                   onClick={() => {
@@ -90,11 +90,13 @@ export default function Destination() {
                 </button>
                 <div
                   className={
-                    destination === "Moon" ? "h-[2px] w-full bg-white" : null
+                    destination === "Moon"
+                      ? "h-[2px] w-full bg-white"
+                      : "h-[2px] w-full bg-transparent group-hover:bg-[#8a8b90] duration-300"
                   }
                 ></div>
               </div>
-              <div className="h-full flex flex-col justify-between">
+              <div className="h-full flex flex-col justify-between group">
                 <button
                   className="heading-3"
                   onClick={() => {
@@ -105,11 +107,13 @@ export default function Destination() {
                 </button>
                 <div
                   className={
-                    destination === "Mars" ? "h-[2px] w-full bg-white" : null
+                    destination === "Mars"
+                      ? "h-[2px] w-full bg-white"
+                      : "h-[2px] w-full bg-transparent group-hover:bg-[#8a8b90] duration-300"
                   }
                 ></div>
               </div>
-              <div className="h-full flex flex-col justify-between">
+              <div className="h-full flex flex-col justify-between group">
                 <button
                   className="heading-3"
                   onClick={() => {
@@ -120,11 +124,13 @@ export default function Destination() {
                 </button>
                 <div
                   className={
-                    destination === "Europa" ? "h-[2px] w-full bg-white" : null
+                    destination === "Europa"
+                      ? "h-[2px] w-full bg-white"
+                      : "h-[2px] w-full bg-transparent group-hover:bg-[#8a8b90] duration-300"
                   }
                 ></div>
               </div>
-              <div className="h-full flex flex-col justify-between">
+              <div className="h-full flex flex-col justify-between group">
                 <button
                   className="heading-3"
                   onClick={() => {
@@ -135,12 +141,14 @@ export default function Destination() {
                 </button>
                 <div
                   className={
-                    destination === "Titan" ? "h-[2px] w-full bg-white" : null
+                    destination === "Titan"
+                      ? "h-[2px] w-full bg-white"
+                      : "h-[2px] w-full bg-transparent group-hover:bg-[#8a8b90] duration-300"
                   }
                 ></div>
               </div>
             </div>
-            <div className="flex flex-col justify-center items-center lg:items-start">
+            <div className="flex flex-col justify-center items-center  mb-auto mt-auto lg:items-start">
               <div className=" flex justify-center items-center  uppercase font-main-font text-[88px] leading-[92px] lg:text-[100px] lg:leading-[115px] lg:justify-start text-white">
                 <div>{destInfo ? destInfo[0].name : null}</div>
               </div>
@@ -152,7 +160,7 @@ export default function Destination() {
             </div>
             <div className="flex flex-col justify-center items-center w-[100%] text-white">
               <div className="bg-gray-color h-[1px] w-full  justify-center items-center mb-8"></div>
-              <div className="flex justify-center items-center w-full lg:justify-start ">
+              <div className="flex flex-col gap-y-8 justify-center items-center w-full lg:justify-start md:flex-row">
                 <div className="w-[50%] flex flex-col justify-center items-center gap-y-2 lg:items-start">
                   <div className="text-[14px] tracking-[2.3625px] leading-[17px] font-sub-font">
                     AVG. DISTANCE

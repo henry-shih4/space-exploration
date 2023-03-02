@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -25,9 +26,13 @@ export default function Home() {
           </div>
           <div className="h-full w-[50%] flex justify-center items-center">
             <div className="">
-              <div className="h-[150px] w-[150px] bg-white text-primary-color rounded-full flex justify-center items-center text-[20px] tracking-[1.25px] font-main-font md:h-[250px] md:w-[250px] md:text-[32px] md:tracking-[2px]">
+              <NavLink
+                className=" relative h-[150px] w-[150px] bg-white text-primary-color rounded-full flex justify-center items-center text-[20px] tracking-[1.25px] font-main-font md:h-[250px] md:w-[250px] md:text-[32px] md:tracking-[2px] cursor-pointer group"
+                to="/destination"
+              >
                 EXPLORE
-              </div>
+                <div className="absolute  z-[-10] w-[240px] h-[240px] rounded-full bg-transparent group-hover:bg-[#24262f] duration-300 opacity-90 lg:w-[360px] lg:h-[360px]"></div>
+              </NavLink>
             </div>
           </div>
         </div>

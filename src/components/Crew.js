@@ -80,7 +80,7 @@ export default function Crew() {
                     className={
                       memberId === 1
                         ? "h-[15px] w-[15px] bg-third-color rounded-full cursor-pointer"
-                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer"
+                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer hover:bg-[#8a8b90] duration-150"
                     }
                     onClick={() => setMemberId(1)}
                   ></button>
@@ -88,7 +88,7 @@ export default function Crew() {
                     className={
                       memberId === 2
                         ? "h-[15px] w-[15px] bg-third-color rounded-full cursor-pointer"
-                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer"
+                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer hover:bg-[#8a8b90] duration-150"
                     }
                     onClick={() => setMemberId(2)}
                   ></button>
@@ -96,7 +96,7 @@ export default function Crew() {
                     className={
                       memberId === 3
                         ? "h-[15px] w-[15px] bg-third-color rounded-full cursor-pointer"
-                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer"
+                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer hover:bg-[#8a8b90] duration-150"
                     }
                     onClick={() => setMemberId(3)}
                   ></button>
@@ -104,7 +104,7 @@ export default function Crew() {
                     className={
                       memberId === 4
                         ? "h-[15px] w-[15px] bg-third-color rounded-full cursor-pointer"
-                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer"
+                        : "h-[15px] w-[15px] bg-[#42444b] rounded-full cursor-pointer hover:bg-[#8a8b90] duration-150"
                     }
                     onClick={() => setMemberId(4)}
                   ></button>
