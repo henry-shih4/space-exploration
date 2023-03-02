@@ -21,7 +21,7 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive
                     ? "flex gap-x-2 justify-center items-center h-full border-b-2"
-                    : "flex gap-x-2 border-b-2 border-transparent"
+                    : "flex gap-x-2 justify-center items-center h-full  border-b-2 border-transparent hover:border-b-2 hover:border-[#8a8b90] duration-300"
                 }
                 to="/"
               >
