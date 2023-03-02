@@ -47,7 +47,7 @@ export default function Crew() {
   }, [memberId, crew]);
 
   return (
-    <div className="min-h-[100dvh] h-[100%] flex justify-center items-center bg-no-repeat bg-cover bg-crew-mobile md:bg-crew-tablet lg:bg-crew-desktop lg:h-[100vh]">
+    <div className="min-h-[100dvh] h-[100%] flex justify-center items-center bg-no-repeat bg-cover bg-crew-mobile bg-fixed md:bg-crew-tablet lg:bg-crew-desktop lg:h-[100vh]">
       <div className="flex flex-col justify-center items-center gap-y-10  w-[80%] lg:h-[100%]  lg:justify-end">
         <div className="h-[120px] lg:hidden"></div>
         <div className="flex flex-col justify-center items-center w-[100%]  lg:h-[100%]">
