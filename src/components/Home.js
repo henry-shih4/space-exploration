@@ -13,7 +13,7 @@ export default function Home() {
             <div className="font-main-font text-[80px] leading-[100px] text-third-color flex justify-center items-center w-full lg:justify-start lg:text-[150px] md:leading-[172px]">
               SPACE
             </div>
-            <div className="body-text w-[100%] flex justify-center items-center lg:justify-start lg:w-[65%] lg:text-left">
+            <div className="font-sub-font-2 text-[15px] leading-[25px] text-secondary-color w-[100%] flex justify-center items-center md:body-text lg:justify-start lg:w-[65%] lg:text-left">
               Let's face it; if you want to go to space, you might as well
               genuinely go to outer space and not hover kind of on the edge of
               it. Well sit back, and relax because we'll give you a truly out of
@@ -23,7 +23,7 @@ export default function Home() {
           <div className="h-full w-[50%] flex justify-center items-center">
             <div className="z-[10]">
               <NavLink
-                className=" relative h-[150px] w-[150px] bg-white text-primary-color rounded-full flex justify-center items-center text-[20px] tracking-[1.25px] font-main-font md:h-[250px] md:w-[250px] md:text-[32px] md:tracking-[2px] cursor-pointer group"
+                className=" relative h-[150px] w-[150px] bg-white text-primary-color rounded-full flex justify-center items-center text-[20px] py-4 tracking-[1.25px] font-main-font md:h-[250px] md:w-[250px] md:text-[32px] md:tracking-[2px] cursor-pointer group"
                 to="/destination"
               >
                 EXPLORE
