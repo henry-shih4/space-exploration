@@ -4,11 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function Home() {
   return (
     <>
-      <div className="flex h-[100dvh] min-h-[100dvh] justify-center items-end">
-        <div className="bg-home-desktop z-[-10] h-[100%] w-[100%] bg-cover bg-center bg-no-repeat absolute "></div>
-        <div className="bg-home-tablet z-[-10] h-[100%] w-[100%] bg-cover bg-center bg-no-repeat absolute lg:hidden"></div>
-        <div className="absolute bg-home-mobile z-[-10] h-[100%] w-[100%] bg-no-repeat bg-cover md:hidden "></div>
-
+      <div className="flex h-[100dvh] min-h-[100dvh] justify-center items-end bg-cover bg-center bg-no-repeat bg-home-mobile md:bg-home-tablet lg:bg-home-desktop">
         <div className="flex justify-center items-center flex-col  h-[80%] lg:h-[50%] lg:w-[80%]  lg:flex-row  text-center ">
           <div className="h-full w-[80%] flex justify-center items-center flex-col lg:justify-start lg:items-start">
             <div className="font-sub-font text-[16px] text-secondary-color leading-[34px] tracking-[4.725px] flex justify-center items-center w-full lg:justify-start md:text-[28px] ">
